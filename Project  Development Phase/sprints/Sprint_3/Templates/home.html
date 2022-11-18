@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+  <title>
+    A Novel Method for Handwritten Digit Recognition System
+  </title>
+
+</head>
+<body>
+  <h2>Handwritten Digit Recognition System</h2>
+  <h4>Upload image</h4><br>
+
+<button width="10px">
+  <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+<label  class="text" for="file" width="20px" style="cursor: pointer;">Upload Image</label>
+</button>
+
+<p><img id="output" /></p>
+
+<script>
+var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
+</script>
+
+  <style>
+body{
+background-image: url("https://media.istockphoto.com/photos/colorful-numbers-background-picture-id1155297204?b=1&k=20&m=1155297204&s=612x612&w=0&h=SbbV1ppMhk9cGFZ3R034bpa5yI9ON765GLvAh9esFD8=");
+background-repeat: no-repeat;   
+background-size: cover; 
+}
+h2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:black;
+  font-size: x-large;
+}
+
+button{
+  width: 150px;
+  height: 20px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-top:15px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  color:white;
+  background-color:#1db096;
+  border-radius: 20px;
+  box-shadow:5px 10px 30px rgba(24, 139, 119 ,0.2);
+}
+button:hover{
+  background-color: #23cdaf;
+  transition: all ease 0.2s;
+}
+
+  </style>
+</body>
+<script>
+  var loadFile=function(event){
+    var image=document.getElementById('output');
+    image.src=URL.createObjectURL(event.target.files[0]);
+  };
+</script>
+<style>
+  
